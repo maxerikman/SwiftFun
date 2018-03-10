@@ -9,11 +9,59 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var myLabel: NSLayoutConstraint!
+    
+  //  var buttonCount = 0
+   
+    
+    @IBOutlet weak var myLabel: UILabel!
+    
+    @IBOutlet weak var topTextField: UITextField!
+    
+    @IBOutlet weak var bottomTextField: UITextField!
+    
+    @IBAction func buttonTapped(_ sender: Any) {
+    
+        let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+        
+        myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
+        
+     
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /*
+        buttonCount += 1
+       
+        print(buttonCount)
+        
+        if buttonCount > 10 {
+            view.backgroundColor = UIColor.blue
+            
+            myLabel.text = "Winner!"
+        }
+        
+        if buttonCount > 15 {
+            view.backgroundColor = UIColor.red
+            
+            myLabel.text = "STOPPPP!"
+        }
+*/
+        
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    
+    
     }
 
     override func didReceiveMemoryWarning() {
